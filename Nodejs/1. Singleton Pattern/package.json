@@ -1,0 +1,23 @@
+{
+    "name": "singleton-pattern-demo",
+    "version": "1.0.0",
+    "description": "A comprehensive demonstration of the Singleton Design Pattern in Node.js",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "test": "node test.js",
+        "dev": "node --watch index.js"
+    },
+    "keywords": [
+        "design-patterns",
+        "singleton",
+        "nodejs",
+        "javascript"
+    ],
+    "author": "Design Patterns Demo",
+    "license": "MIT",
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}

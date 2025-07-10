@@ -1,0 +1,66 @@
+{
+    "database": {
+        "host": "localhost",
+        "port": 5432,
+        "name": "singleton_demo",
+        "user": "demo_user",
+        "password": "demo_password",
+        "poolSize": 15
+    },
+    "server": {
+        "port": 3000,
+        "host": "0.0.0.0",
+        "environment": "development",
+        "cors": {
+            "enabled": true,
+            "origins": [
+                "http://localhost:3000",
+                "http://localhost:3001"
+            ]
+        }
+    },
+    "app": {
+        "name": "Singleton Pattern Demo",
+        "version": "1.0.0",
+        "debug": true,
+        "logLevel": "debug",
+        "maxUsers": 5000,
+        "userCacheTimeout": 300000,
+        "enableAuditLog": true,
+        "maxOrderValue": 15000,
+        "enableOrderValidation": true,
+        "orderProcessingTimeout": 45000,
+        "taxRate": 0.085,
+        "shippingCost": 4.99,
+        "notificationMaxRetries": 5,
+        "notificationRetryDelay": 2000,
+        "notificationRateLimit": 200,
+        "enableNotificationQueue": true,
+        "enableNotificationLogging": true,
+        "notificationBatchSize": 20,
+        "startTime": null,
+        "processId": null,
+        "demoMode": false
+    },
+    "services": {
+        "redis": {
+            "host": "localhost",
+            "port": 6379,
+            "password": null
+        },
+        "email": {
+            "provider": "smtp",
+            "host": "smtp.gmail.com",
+            "port": 587,
+            "secure": false,
+            "from": "noreply@singleton-demo.com"
+        },
+        "sms": {
+            "provider": "twilio",
+            "from": "+1234567890"
+        },
+        "push": {
+            "provider": "firebase"
+        }
+    }
+}
